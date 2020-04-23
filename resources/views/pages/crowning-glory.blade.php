@@ -1,16 +1,16 @@
 @extends('layouts.master')
 @section('pre')
 	@php
-	$title = "KC in Media";
-	$menu_item = 'kcinmedia';
+	$title = "Crowning Glory";
+	$menu_item = 'crowning-glory';
 @endphp
 @endsection
 @section('content')
 	<div class="section clearfix object-non-visible" data-animation-effect="fadeIn">
 		<div class="container main-content-sub">
 			<div class="row">
-				<h1 class="text-center title" id="portfolio"><span>KC in Media</span></h1>
-				@foreach (App\KCinMedia::where('type', 'media')->orderBy('id','DESC')->get() as $media)
+				<h1 class="text-center title" id="portfolio"><span>Crowning Glory</span></h1>
+				@foreach (App\KCinMedia::where('type', 'glory')->orderBy('id','DESC')->get() as $media)
 				<div class="row">
 					<div class="col-md-6" style="float:left">
 						@php

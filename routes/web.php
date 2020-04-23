@@ -80,6 +80,7 @@ Route::middleware([MaintenanceCheck::class])->group(function () {
   // Route::get('/career-at-kc','DepartmentController@getCareerAtKc')->name('careeratkc');
   Route::get('/ugc','DepartmentController@getCareerAtKc')->name('careeratkc');
   Route::get('/kc-in-media','DepartmentController@getMediaAtKc')->name('kcinmedia');
+  Route::get('/crowning-glory','DepartmentController@getCrowningGlory')->name('crowning-glory');
   // Route::get('/career-at-kc/details/{url}','DepartmentController@getCareerAtKc_PDF')->name('careeratkc-details');
   Route::get('/career-at-kc/apply/{id}','DepartmentController@getCareerAtKcApply')->name('careeratkc-apply');
 

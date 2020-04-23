@@ -17,6 +17,7 @@ class CreateKcInMediaTable extends Migration
       $table->increments('id');
       $table->string('name')->nullable();
       $table->longtext('description')->nullable();
+      $table->string('type')->default('media');
       $table->string('carousel')->nullable();
       $table->integer("created_by")->nullable();
       $table->integer("updated_by")->nullable();

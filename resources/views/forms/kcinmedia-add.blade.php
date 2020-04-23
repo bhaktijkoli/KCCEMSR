@@ -10,6 +10,7 @@
             <tr>
               <th width="10%">#</th>
               <th width="20%">Name</th>
+              <th width="20%">Type</th>
               <th width="20%">Actions</th>
             </tr>
           </thead>
@@ -31,6 +32,7 @@
             <tr>
               <th width="10%">#</th>
               <th width="20%">Name</th>
+              <th width="20%">Type</th>
               <th width="20%">Actions</th>
             </tr>
           </tfoot>
@@ -58,6 +60,16 @@
             <label class="control-label col-sm-2" for="description">Description:</label>
             <div class="col-sm-9">
               <textarea name="description" id="description" class="textarea" style="width: 100%; height: 500px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+              <p class="help-block"></p>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="type">Type:</label>
+            <div class="col-sm-9">
+              <select class="form-control" id="type" name="type">
+                <option value="media">KC in Media</option>
+                <option value="glory">Crowning Glory</option>
+              </select>
               <p class="help-block"></p>
             </div>
           </div>

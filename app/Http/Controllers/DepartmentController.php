@@ -76,6 +76,10 @@ class DepartmentController extends Controller
   {
     return view('pages.kcinmedia');
   }
+  public function getCrowningGlory()
+  {
+    return view('pages.crowning-glory');
+  }
   public function getCareerAtKc_PDF($url)
   {
     $job = JobList::where('url',$url)->first();

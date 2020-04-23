@@ -885,6 +885,7 @@ class DashboardApiController extends Controller
     $media->name = $request->input("title","");
     $media->description = $request->input("description","");
     $media->carousel = $request->input("carousel","");
+    $media->type = $request->input("type","");
     $media->updated_by = Auth::user()->id;
     $media->created_by = Auth::user()->id;
     $media->save();
