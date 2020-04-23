@@ -87,6 +87,10 @@ Route::middleware([MaintenanceCheck::class])->group(function () {
 
   Route::get('/human-value-education-cell','HumanValuesEducationCellController@index')->name('hvecell');
   Route::post('/human-value-education-cell/trigger','HumanValuesEducationCellController@trigger');
+
+  Route::get('/my-kc-quarantine-story', function() {
+    return view('pages.quarantine-story');
+  })->name('quarantine-story');
 });
 
 

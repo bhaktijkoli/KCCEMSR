@@ -78,7 +78,7 @@
 								<li><a href="{{route('kcinmedia')}}">KC in Media</a></li>
 								<li><a href="{{route('careeratkc')}}">Careers</a></li>
 								<li><a href="{{route('hvecell')}}">Human Value Education Cell</a></li>
-								<li><a href="{{route('careeratkc')}}">Crowning Glory</a></li>
+								<li><a href="#">Crowning Glory</a></li>
 								<li><a href="https://www.orionhack.com" style="text-shadow: 1px 1px 1.4px #48a9ed;">OrionHack</a></li>
 							</ul>
 						</div>
@@ -239,7 +239,7 @@
 							<li class="{{$menu_item=='iqac'?'active':''}} sub-menu-parent"><a href="{{route('iqac', 'introduction')}}">IQAC</a></li>
 							<li class="{{$menu_item=='placements'?'active':''}} sub-menu-parent"><a href="{{route('placements')}}">Placement</a></li>
 							{{-- <li class="{{$menu_item=='hvecell'?'active':''}} sub-menu-parent"><a href="{{route('hvecell')}}">Human Value Education Cell</a></li> --}}
-							<li class="{{$menu_item=='hvecell'?'active':''}} sub-menu-parent"><a href="{{route('hvecell')}}">My KC Quarantine Story</a></li>
+							<li class="{{$menu_item=='quarantine-story'?'active':''}} sub-menu-parent"><a href="{{route('quarantine-story')}}">My KC Quarantine Story</a></li>
 							{{-- <li><a href="/#contact">Contact Us</a></li> --}}
 						</ul>
 					</div>
