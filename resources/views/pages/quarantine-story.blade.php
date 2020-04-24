@@ -8,6 +8,7 @@
   <div class="section clearfix object-non-visible" data-animation-effect="fadeIn">
     <div class="container main-content">
       <h1 class="text-center title" id="quarantine-story"><span>My KC Quarantine Story</span></h1>
+      <p class="text-center" style="font-size: 2rem;">Break the Covid chain not the learning chain.. Stay in but stay connected for learning...</p>
       <div class="separator"></div>
       <br>
       <div class="row object-non-visible" data-animation-effect="fadeIn">
