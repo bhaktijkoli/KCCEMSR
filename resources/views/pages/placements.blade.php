@@ -156,7 +156,6 @@
 							</div>
 							<div role="tabpanel" class="tab-pane" id="student_testimonials">
 								<div class="carousel slide" data-ride="carousel" id="quote-carousel">
-									<!-- Carousel Slides / Quotes -->
 									<div class="carousel-inner text-center">
 										@php
 										$no=0;
@@ -174,25 +173,24 @@
 											</div>
 										@endforeach
 									</div>
-									<!-- Bottom Carousel Indicators -->
 									<ol class="carousel-indicators">
 										@php
 										$no=0;
 										@endphp
 										@foreach (App\Testimonial::all() as $test)
-											<li data-target="#quote-carousel" data-slide-to="{{$no}}" class="{{$no++==0?'active':''}}"><img class="img-responsive" src="{{$test->getUrl()}}" alt="">
-											@endforeach
-										</ol>
-										<!-- Carousel Buttons Next/Prev -->
-										<a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
-										<a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
-									</div>
+											<li data-target="#quote-carousel" data-slide-to="{{$no}}" class="{{$no++==0?'active':''}}">
+												<img class="img-responsive" src="{{$test->getUrl()}}" alt="">
+											</li>
+										@endforeach
+									</ol>
+									<a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+									<a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
 								</div>
 							</div>
 							<div role="tabpanel" class="tab-pane" id="placement_activities">
 								<div class="row">
 									@foreach (App\Event::where('department', 'tpo')->orderBy('date','desc')->get() as $event)
-										<div class="col-sm-6">
+										<div class="col-sm-6" style="margin-bottom:20px;">
 											<div class="image-box">
 												<div class="overlay-container">
 													<img src="{{url("images/eclipse.gif")}}" alt="" data-echo="{{$event->getFeaturedImage()}}" style="height: 250px;margin: 0 auto;" height="500">
@@ -213,12 +211,13 @@
 							</div>
 						</div>
 					</div>
-					<div class="space"></div>
-
 				</div>
+				<div class="space"></div>
+
 			</div>
-		@endsection
-		@section('post')
-			<script type="text/javascript" src="js/chart.min.js"></script>
-			<script type="text/javascript" src="{{ asset('js/vue.js') }}"></script>
-		@endsection
+		</div>
+	@endsection
+	@section('post')
+		<script type="text/javascript" src="js/chart.min.js"></script>
+		<script type="text/javascript" src="{{ asset('js/vue.js') }}"></script>
+	@endsection
