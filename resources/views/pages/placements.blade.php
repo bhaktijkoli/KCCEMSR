@@ -82,6 +82,7 @@
 							<li role="presentation"><a href="#team" aria-controls="settings" role="tab" data-toggle="tab">Team</a></li>
 							<li role="presentation"><a href="#student_placement" aria-controls="profile" role="tab" data-toggle="tab">Student Placement</a></li>
 							<li role="presentation"><a href="#student_testimonials" aria-controls="profile" role="tab" data-toggle="tab">Student Testimonials</a></li>
+							<li role="presentation"><a href="#placement_activities" aria-controls="profile" role="tab" data-toggle="tab">Placement Activities</a></li>
 						</ul>
 						<div class="tab-content">
 							<div role="tabpanel" class="tab-pane active" id="tpo-message">
@@ -186,6 +187,28 @@
 										<a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
 										<a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
 									</div>
+								</div>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="placement_activities">
+								<div class="row">
+									@foreach (App\Event::where('department', 'tpo')->orderBy('date','desc')->get() as $event)
+										<div class="col-sm-6">
+											<div class="image-box">
+												<div class="overlay-container">
+													<img src="{{url("images/eclipse.gif")}}" alt="" data-echo="{{$event->getFeaturedImage()}}" style="height: 250px;margin: 0 auto;" height="500">
+													<a class="overlay" href="{{route('event', $event->url)}}">
+														<i class="fa fa-search-plus"></i>
+														<span>{{App\Department::getName($event->department)}}</span>
+													</a>
+												</div>
+												<a class="btn btn-default btn-block" href="{{route('event', $event->url)}}">
+													<p style="overflow: hidden; margin: 0px; white-space: normal;" class="ellipsis_3_line">
+														{{$event->name}}
+													</p>
+												</a>
+											</div>
+										</div>
+									@endforeach
 								</div>
 							</div>
 						</div>
