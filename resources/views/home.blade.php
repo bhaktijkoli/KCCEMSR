@@ -10,13 +10,13 @@
 	<!-- banner start -->
 	<!-- ================ -->
 	<a href="{{route('mockcet2020')}}" id="notification"><i class="fa fa-bell">
-	<p class="bubble speech" id="bell_info" style="color:black">Click the bell for Mock CET Test
-</p>
-</i></a>
+		<p class="bubble speech" id="bell_info" style="color:black">Click the bell for Mock CET Test
+		</p>
+	</i></a>
 
-{{-- <div id="splashscreen">
-<button type="button" class="close enter_site" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-<img id="splashimg" src="{{url("images/splash_banner.jpg")}}" />
+	{{-- <div id="splashscreen">
+	<button type="button" class="close enter_site" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	<img id="splashimg" src="{{url("images/splash_banner.jpg")}}" />
 </div> --}}
 <div id="banner" class="banner">
 	<!-- button -->
@@ -118,6 +118,12 @@
 				{{-- <p class="lead text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta officia, aspernatur.</p> --}}
 				<div class="space"></div>
 				<div class="row">
+					<div class="col-md-12">
+						<div class="text-center" style="margin-bottom:20px;">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/1gR1xMbjUWs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<p style="font-size:18px; line-height:18px; margin-top:12px">Motivational message by Chairperson Dr. Harssh Khanna</p>
+						</div>
+					</div>
 					<div class="col-md-6">
 						<h2 class="title text-center"><span>KC@Glance</span></h2>
 						<div class="b" id="b2">
@@ -222,24 +228,24 @@
 			<br>
 			<div class="row object-non-visible" data-animation-effect="fadeIn">
 				<div class="col-md-12">
-						<div style="display: flex;flex-wrap: wrap;padding: 0 4px;">
-								<div class="column-for-comp">
-									<img src="{{url("images/eclinicalworks.png")}}">
-									<img src="{{url("images/infosys.jpg")}}">
-							</div>
-							<div class="column-for-comp">
-									<img src="{{url("images/Jaro.jpeg")}}">
-									<img src="{{url("images/ltihr.jpg")}}">
-							</div>
-							<div class="column-for-comp">
-									<img src="{{url("images/neosoft.jpg")}}">
-									<img src="{{url("images/sankey.jpg")}}">
-							</div>
-							<div class="column-for-comp">
-									<img src="{{url("images/simple-logic.png")}}">
-									<img src="{{url("images/tcs.png")}}">
-							</div>
+					<div style="display: flex;flex-wrap: wrap;padding: 0 4px;">
+						<div class="column-for-comp">
+							<img src="{{url("images/eclinicalworks.png")}}">
+							<img src="{{url("images/infosys.jpg")}}">
 						</div>
+						<div class="column-for-comp">
+							<img src="{{url("images/Jaro.jpeg")}}">
+							<img src="{{url("images/ltihr.jpg")}}">
+						</div>
+						<div class="column-for-comp">
+							<img src="{{url("images/neosoft.jpg")}}">
+							<img src="{{url("images/sankey.jpg")}}">
+						</div>
+						<div class="column-for-comp">
+							<img src="{{url("images/simple-logic.png")}}">
+							<img src="{{url("images/tcs.png")}}">
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
