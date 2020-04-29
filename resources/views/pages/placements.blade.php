@@ -87,6 +87,7 @@
 							<li role="presentation"><a href="#student_placement" aria-controls="profile" role="tab" data-toggle="tab">Student Placement</a></li>
 							<li role="presentation"><a href="#student_testimonials" aria-controls="profile" role="tab" data-toggle="tab">Student Testimonials</a></li>
 							<li role="presentation"><a href="#placement_activities" aria-controls="profile" role="tab" data-toggle="tab">Placement Activities</a></li>
+							<li role="presentation"><a href="#internships" aria-controls="profile" role="tab" data-toggle="tab">Student Internships</a></li>
 						</ul>
 						<div class="tab-content">
 							<div role="tabpanel" class="tab-pane active" id="tpo-message">
@@ -208,6 +209,115 @@
 											</div>
 										</div>
 									@endforeach
+								</div>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="internships">
+								<h2 style="margin-top: 0px; margin-bottom: 5px;">Student Internships</h2>
+								<ul class="nav nav-pills" style="margin-top:10px">
+									<li><a data-toggle="tab" href="#2018-19">2018-19</a></li>
+									<li class="active"><a data-toggle="tab" href="#2019-20">2019-20</a></li>
+								</ul>
+								<div class="tab-content">
+									<div id="2018-19" class="tab-pane fade">
+										<div class="table-responsive">
+											<table class="table table-bordered table-hover">
+												<thead>
+													<tr>
+														<th>#</th>
+														<th>Company Name</th>
+														<th>Duration</th>
+														<th>Eligible Branches</th>
+														<th>No.of Students</th>
+													</tr>
+												</thead>
+												<tr>
+													<td>1</td>
+													<td>Sahu Technologies</td>
+													<td>Jan-Feb’19</td>
+													<td>T.E All</td>
+													<td>68</td>
+												</tr>
+												<tr>
+													<td>2</td>
+													<td>Alkymia Tech India Pvt. Ltd</td>
+													<td>June-July’19</td>
+													<td>T.E All, S.E All</td>
+													<td>97, 11</td>
+												</tr>
+												<tr>
+													<td>3</td>
+													<td>Shavison Electronics Pvt. Ltd.</td>
+													<td>June-July’19</td>
+													<td>S.E EXTC</td>
+													<td>20</td>
+												</tr>
+												<tr>
+													<td>4</td>
+													<td>Dezignolics</td>
+													<td>June-July’19</td>
+													<td>TE ALL</td>
+													<td>22</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+									<div id="2019-20" class="tab-pane fade in active">
+										<div class="table-responsive">
+											<table class="table table-bordered table-hover">
+												<thead>
+													<tr>
+														<th>#</th>
+														<th>Company Name</th>
+														<th>Duration</th>
+														<th>Eligible Branches</th>
+														<th>No.of Students</th>
+													</tr>
+												</thead>
+												<tr>
+													<td>1</td>
+													<td>Dcodetech Internship</td>
+													<td>5th Dec 2019- 20th Dec 2019</td>
+													<td>SE ALL, TE ALL</td>
+													<td>110</td>
+												</tr>
+												<tr>
+													<td>2</td>
+													<td>Eduvance/EnablAR</td>
+													<td>April-May 2020</td>
+													<td>SE ALL, TE ALL</td>
+													<td>13</td>
+												</tr>
+												<tr>
+													<td>3</td>
+													<td>Cloud counselage</td>
+													<td>2019-20 (Year long)</td>
+													<td>SE ALL, TE ALL</td>
+													<td>2</td>
+												</tr>
+												<tr>
+													<td>4</td>
+													<td>Sahu Technology</td>
+													<td>April- May 2020</td>
+													<td>SE ALL, TE ALL</td>
+													<td>17</td>
+												</tr>
+												<tr>
+													<td>5</td>
+													<td>MTA ATS Infotech </td>
+													<td>April- May 2020</td>
+													<td>TE All</td>
+													<td>2</td>
+												</tr>
+												<tr>
+													<td>6</td>
+													<td>Grow9 Digital </td>
+													<td>April- May 2020</td>
+													<td>FE, SE ALL, TE ALL</td>
+													<td>34</td>
+												</tr>
+											</table>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
