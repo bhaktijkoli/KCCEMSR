@@ -14,6 +14,11 @@
 				<div class="col-md-12">
 					<p style="text-align: justify;text-indent: 30px;">Welcome to Training & Placement Cell at K. C College of Engineering & Management Studies & Research, Thane. Training and Placement is a vital department in the college and is constantly striving to provide assistance to the students in their efforts to probe for the employment. It also caters needs of various organizations to conduct the interviews. It plays an important role in counselling and guiding the students for their successful career placement. It arranges various technical and soft skills programs which augments the skills and increases the confidence of the students when facing the various tests and interviews conducted by the companies and to meet companies’ expectations. The Training and Placement Cell takes pride in offering student services like consultation on a wide range of issues such as employment, career planning, opportunities etc. thereby preparing students effectively for their career to make them competent. Training and Placement Cell operates year round to facilitate contacts between graduates and Industry.</p>
 				</div>
+				<div clas="col-md-12">
+					<div class="text-center">
+						<a href="/tpc-calendar.pdf" target="_blank" class="btn btn-primary">View TPC Calendar</a>
+					</div>
+				</div>
 			</div>
 			<div class="space"></div>
 			<div class="space"></div>
@@ -78,7 +83,6 @@
 						<ul class="nav nav-tabs" role="tablist">
 							<li role="presentation" class="active"><a href="#tpo-message" aria-controls="home" role="tab" data-toggle="tab">TPO's Message</a></li>
 							<li role="presentation"><a href="#statistics" aria-controls="profile" role="tab" data-toggle="tab">Placement Statistics</a></li>
-							<li role="presentation"><a href="#functions_responsibilities" aria-controls="messages" role="tab" data-toggle="tab">Functions &amp; Responsibilities</a></li>
 							<li role="presentation"><a href="#team" aria-controls="settings" role="tab" data-toggle="tab">Team</a></li>
 							<li role="presentation"><a href="#student_placement" aria-controls="profile" role="tab" data-toggle="tab">Student Placement</a></li>
 							<li role="presentation"><a href="#student_testimonials" aria-controls="profile" role="tab" data-toggle="tab">Student Testimonials</a></li>
@@ -91,14 +95,6 @@
 									<p style="text-align: justify;">This era of globalization has opened enormous opportunities for young and talented budding engineers in all the walks of life. As a result, the expectations from the young engineers are that they should mould themselves seamlessly in to the global corporate culture. To achieve this, Team Training & Placement cell is functioning for employability enhancement and achieve the career aspirations of our students.</p>
 									<footer class="blockquote-footer">Dr Ravi Prakash, Head, TPC.</footer>
 								</blockquote>
-								<div class="space"></div>
-							</div>
-							<div role="tabpanel" class="tab-pane" id="statistics">
-								<div class="row" id="statistics">
-									<placement-stats></placement-stats>
-								</div>
-							</div>
-							<div role="tabpanel" class="tab-pane" id="functions_responsibilities">
 								<p>Training and Placement Office takes care of the following functions and responsibilities:</p>
 								<ul class="list-unstyled">
 									<li><i class="fa fa-caret-right pr-10 text-colored list-dept-page-uorder-img"></i> <p class="list-text-ovrflw-fix">To have close liaison with Industry to facilitate Training &amp; Placement activities.</p></li>
@@ -111,6 +107,11 @@
 									<li><i class="fa fa-caret-right pr-10 text-colored list-dept-page-uorder-img"></i> <p class="list-text-ovrflw-fix">Co-ordinate periodical meetings with students and HOD’s, Principal for feedback on Training &amp; Placement activities</p></li>
 									<li><i class="fa fa-caret-right pr-10 text-colored list-dept-page-uorder-img"></i> <p class="list-text-ovrflw-fix">Prepare schedule, budget, policies for Training &amp; Placement Office.</p></li>
 								</ul>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="statistics">
+								<div class="row" id="statistics">
+									<placement-stats></placement-stats>
+								</div>
 							</div>
 							<div role="tabpanel" class="tab-pane" id="team">
 								<center>
