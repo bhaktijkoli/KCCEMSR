@@ -10,6 +10,9 @@
 			<div class="row">
 				<h1 class="text-center" style="margin-bottom:3%;"><strong><span>Careers at KC</span></strong></h1>
 				<div class="col-md-12">
+					<p class="text-center" style="font-size:18px;margin-bottom:20px">Interested candidates can send their resume to <a href="mailto:career@kccemsr.edu.in">career@kccemsr.edu.in</a></p>
+				</div>
+				<div class="col-md-12">
 					<table class="table">
 						<thead>
 							<tr>
