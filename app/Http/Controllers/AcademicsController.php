@@ -18,7 +18,15 @@ class AcademicsController extends Controller
     $type = "exam-notices";
     return view('pages.notices', compact('type'));
   }
-
+  public function getNoticeById($id)
+  {
+    $file = FileUpload::where('id',$id)->first();
+    if(!$file) abort("404");
+    $title = $file->name;
+    $url = $file->getUrl();
+    $menu_item = "exam";
+    return view('pages.pdfview', compact("title", "url","menu_item"));
+  }
   public function getStaffNotices()
   {
     return view('pages.staff-notices');
