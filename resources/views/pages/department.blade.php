@@ -36,7 +36,9 @@
 					<li role="presentation"><a href="#labs" aria-controls="profile" role="tab" data-toggle="tab">Laboratories</a></li>
 					<li role="presentation"><a href="#dptAct" aria-controls="home" role="tab" data-toggle="tab">Departmental Activities</a></li>
 					<li role="presentation"><a href="#stuAch" aria-controls="profile" role="tab" data-toggle="tab">Student's Achievement</a></li>
-					<li role="presentation"><a href="#alumni" aria-controls="messages" role="tab" data-toggle="tab">Successful Alumni</a></li>
+					@if ($dep->url != 'humanities-sciences')
+						<li role="presentation"><a href="#alumni" aria-controls="messages" role="tab" data-toggle="tab">Successful Alumni</a></li>
+					@endif
 				</ul>
 
 				<!-- Tab panes -->
