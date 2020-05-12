@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('pre')
 	@php
-	$title = "Notice"
+	$title = "Notice";
 	$menu_item = 'academics';
 @endphp
 @endsection
