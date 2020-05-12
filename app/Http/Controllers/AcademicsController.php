@@ -13,6 +13,12 @@ class AcademicsController extends Controller
     return view('pages.curriculum-plan');
   }
 
+  public function getNotices()
+  {
+    $type = "exam-notices";
+    return view('pages.notices', compact('type'));
+  }
+
   public function getStaffNotices()
   {
     return view('pages.staff-notices');

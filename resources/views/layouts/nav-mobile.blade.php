@@ -45,6 +45,7 @@
 							<ul>
 								<li><a href="{{route('academic-calendar')}}">Academic Calendar</a></li>
 								<li><a href="{{route('department-list')}}">Departments</a></li>
+								<li><a href="{{route('notices')}}">Notices</a></li>
 								<li><a href="http://www.learningatkc.com/moodle/login/index.php" target="_blank">KC-Moodle</a></li>
 								<li><a href="{{route('publications')}}">Publications</a></li>
 								<li><a href="{{route('rd', 'aim')}}">Research &amp; Development</a></li>
