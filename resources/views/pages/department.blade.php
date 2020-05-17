@@ -63,7 +63,7 @@
 								<div class="space"></div>
 							</div>
 							<div class="col-md-6">
-								<h2 style="margin-top: 0px; margin-bottom: 5px;">Program Educational Objectives</h2>
+								<h2 style="margin-top: 0px; margin-bottom: 5px;">Programme Educational Objectives</h2>
 								<ul class="list-unstyled">
 									@php
 									$data = explode(".", $dep->objectives);
