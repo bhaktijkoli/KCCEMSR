@@ -190,7 +190,7 @@
 							@endfor
 						</ul>
 					</div>
-					<div id="events" class="{{$action=='meetings'?'tab-pane fade in active':'tab-pane fade in'}}">
+					<div id="events" class="{{$action=='events'?'tab-pane fade in active':'tab-pane fade in'}}">
 						<h3>Events</h3>
 						@foreach (App\Event::where('department', 'iqac')->orderBy('date','desc')->get() as $event)
 							<div class="col-sm-6">
