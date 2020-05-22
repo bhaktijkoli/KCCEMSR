@@ -15,8 +15,9 @@
 					<li class="{{$action=='members'?'active':''}}"><a href="{{route('iqac', 'members')}}">Members</a></li>
 					<li class="{{$action=='procedure'?'active':''}}"><a href="{{route('iqac', 'procedure')}}">Procedure</a></li>
 					<li class="{{$action=='functions_strategy'?'active':''}}"><a href="{{route('iqac', 'functions_strategy')}}">Functions and Strategy</a></li>
-					<li class="{{$action=='contact_us'?'active':''}}"><a href="{{route('iqac', 'contact_us')}}">Contact Us</a></li>
+					<li class="{{$action=='events'?'active':''}}"><a href="{{route('iqac', 'meetings')}}">Events</a></li>
 					<li class="{{$action=='meetings'?'active':''}}"><a href="{{route('iqac', 'meetings')}}">Meetings</a></li>
+					<li class="{{$action=='contact_us'?'active':''}}"><a href="{{route('iqac', 'contact_us')}}">Contact Us</a></li>
 				</ul>
 			</div>
 			<div class="col-sm-8 col-md-8">
@@ -188,6 +189,27 @@
 								<li><a target="_blank" href="{{route('iqac-meetings',$i)}}">Meeting {{$i}}</a></li>
 							@endfor
 						</ul>
+					</div>
+					<div id="events" class="{{$action=='meetings'?'tab-pane fade in active':'tab-pane fade in'}}">
+						<h3>Events</h3>
+						@foreach (App\Event::where('department', 'iqac')->orderBy('date','desc')->get() as $event)
+							<div class="col-sm-6">
+								<div class="image-box">
+									<div class="overlay-container">
+										<img src="{{url("images/eclipse.gif")}}" alt="" data-echo="{{$event->getFeaturedImage()}}" style="height: 250px;margin: 0 auto;" height="500">
+										<a class="overlay" href="{{route('event', $event->url)}}">
+											<i class="fa fa-search-plus"></i>
+											<span>{{App\Department::getName($event->department)}}</span>
+										</a>
+									</div>
+									<a class="btn btn-default btn-block" href="{{route('event', $event->url)}}">
+										<p style="overflow: hidden; margin: 0px; white-space: normal;" class="ellipsis_3_line">
+											{{$event->name}}
+										</p>
+									</a>
+								</div>
+							</div>
+						@endforeach
 					</div>
 				</div>
 			</div>

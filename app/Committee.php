@@ -92,6 +92,7 @@ class Committee extends Model
       (object)["name"=>"TPO", "url"=>"tpo"],
       (object)["name"=>"Human Values Education Cell", "url"=>"hvecell"],
       (object)["name"=>"Value Added Cell", "url"=>"vac"],
+      (object)["name"=>"IQAC", "url"=>"iqac"],
       (object)["name"=>"KC Quarantine Story", "url"=>"kcqs"],
     ]);
     return $committees;
