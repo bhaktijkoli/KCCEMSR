@@ -78,4 +78,8 @@ class AboutController extends Controller
     public function getFeedback() {
       return redirect('/public/naac/feedback.pdf');
     }
+    public function getIndustryInstituteInteraction()
+    {
+      return view('pages.industr-institute-interaction');
+    }
 }
