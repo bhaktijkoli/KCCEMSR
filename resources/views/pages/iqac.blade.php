@@ -15,7 +15,7 @@
 					<li class="{{$action=='members'?'active':''}}"><a href="{{route('iqac', 'members')}}">Members</a></li>
 					<li class="{{$action=='procedure'?'active':''}}"><a href="{{route('iqac', 'procedure')}}">Procedure</a></li>
 					<li class="{{$action=='functions_strategy'?'active':''}}"><a href="{{route('iqac', 'functions_strategy')}}">Functions and Strategy</a></li>
-					<li class="{{$action=='events'?'active':''}}"><a href="{{route('iqac', 'meetings')}}">Events</a></li>
+					<li class="{{$action=='events'?'active':''}}"><a href="{{route('iqac', 'events')}}">Events</a></li>
 					<li class="{{$action=='meetings'?'active':''}}"><a href="{{route('iqac', 'meetings')}}">Meetings</a></li>
 					<li class="{{$action=='contact_us'?'active':''}}"><a href="{{route('iqac', 'contact_us')}}">Contact Us</a></li>
 				</ul>
