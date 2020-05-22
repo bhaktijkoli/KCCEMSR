@@ -63,7 +63,11 @@
 								<div class="space"></div>
 							</div>
 							<div class="col-md-6">
-								<h2 style="margin-top: 0px; margin-bottom: 5px;">Programme Educational Objectives</h2>
+								@if ($dep->url == 'mms')
+									<h2 style="margin-top: 0px; margin-bottom: 5px;">Programme Outcomes</h2>
+								@else
+									<h2 style="margin-top: 0px; margin-bottom: 5px;">Programme Educational Objectives</h2>
+								@endif
 								<ul class="list-unstyled">
 									@php
 									$data = explode(".", $dep->objectives);
@@ -256,7 +260,7 @@
 												@endphp
 												@foreach ($infrastructure[$i]->images as $imageID)
 													@php
-														$image = App\ImageUpload::where('id', $imageID)->first();
+													$image = App\ImageUpload::where('id', $imageID)->first();
 													@endphp
 													<div class="item{{$no==0?' active': ''}}" data-slide-number="{{$no++}}">
 														<img src="{{$image->getUrl()}}" width="1200">
@@ -282,7 +286,7 @@
 											@endphp
 											@foreach ($infrastructure[$i]->images as $imageID)
 												@php
-													$image = App\ImageUpload::where('id', $imageID)->first();
+												$image = App\ImageUpload::where('id', $imageID)->first();
 												@endphp
 												<li>
 													<a id="carousel-thumb-{{$no++}}" class="{{$no==0?'selected':''}}">
