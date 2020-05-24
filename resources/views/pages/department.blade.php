@@ -211,7 +211,7 @@
 					</div>
 				</div>
 				<div role="tabpanel" class="tab-pane" id="staff">
-					<h1 class="title text-center" style="margin-top: 5%;margin-bottom: 0px;">List of Staff:</h1>
+					<h1 class="title text-center" style="margin-top: 5%;margin-bottom: 0px;">List of Faculty:</h1>
 					<p style="text-align: center;">(Click on the picture to read more.)</p>
 					<div class="container">
 						@foreach (App\Staff::where('department', $dep->url)->orderBy('sort','ASC')->get() as $staff)
