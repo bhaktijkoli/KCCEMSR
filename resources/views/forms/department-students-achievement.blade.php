@@ -9,8 +9,8 @@
           <th width="10%">Photo</th>
           <th width="20%">Name</th>
           <th width="20%">Student</th>
-          <th width="50%">Achievement</th>
           <th width="20%">Category</th>
+          <th width="50%">Achievement</th>
           <th width="20%">Actions</th>
         </tr>
       </thead>
@@ -21,7 +21,7 @@
             <td>{{$ach->name}}</td>
             <td>{{$ach->type=='0'?'Student':'Alumni'}}</td>
             <td>{{$ach->category}}</td>
-            <td>{{strip_tags($ach->description)}}</td>
+            <td>{{str_limit(strip_tags($ach->description), 30)}}</td>
             <td>
               <a class="btn btn-warning btn-sm" style="margin-right:10px;" href="{{route('admin_department_edit',[$dep->url,$action,$ach->id])}}"><i class="fa fa-pencil"></i></a>
               <a class="btn btn-sm btn-danger" style="margin-right:10px;" onclick="dashboard.removeYesNo('Are you sure you want to remove this achievement ?', '/api/admin/department/sa/remove', {{$ach->id}})"><i class="fa fa-trash-o"></i></a>
