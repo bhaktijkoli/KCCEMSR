@@ -8,15 +8,19 @@
         <tr>
           <th width="10%">Photo</th>
           <th width="20%">Name</th>
+          <th width="20%">Student</th>
           <th width="50%">Achievement</th>
+          <th width="20%">Category</th>
           <th width="20%">Actions</th>
         </tr>
       </thead>
       <tbody>
-        @foreach (App\Achievement::where("type","0")->where("department",$dep->url)->get() as $ach)
+        @foreach (App\Achievement::where("type", "!=", "1")->where("department",$dep->url)->get() as $ach)
           <tr>
             <td><img src="{{$ach->getUrl()}}" alt="" width="60" height="60"></td>
             <td>{{$ach->name}}</td>
+            <td>{{$ach->type=='0'?'Student':'Alumni'}}</td>
+            <td>{{$ach->category}}</td>
             <td>{{strip_tags($ach->description)}}</td>
             <td>
               <a class="btn btn-warning btn-sm" style="margin-right:10px;" href="{{route('admin_department_edit',[$dep->url,$action,$ach->id])}}"><i class="fa fa-pencil"></i></a>
@@ -29,6 +33,8 @@
         <tr>
           <th width="10%">Photo</th>
           <th width="20%">Name</th>
+          <th width="20%">Student</th>
+          <th width="20%">Category</th>
           <th width="50%">Achievement</th>
           <th width="20%">Actions</th>
         </tr>
@@ -47,6 +53,29 @@
         <label class="control-label col-sm-2" for="name">Name:</label>
         <div class="col-sm-9">
           <input type="text" class="form-control" id="name" name="name">
+          <p class="help-block"></p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="name">Studnet Type:</label>
+        <div class="col-sm-9">
+          <select class="form-control" id="type" name="type">
+            <option value="0">Student</option>
+            <option value="2">Alumni</option>
+          </select>
+          <p class="help-block"></p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="name">Category:</label>
+        <div class="col-sm-9">
+          <select class="form-control" id="category" name="category">
+            <option value="Academics">Academics</option>
+            <option value="Technical">Technical</option>
+            <option value="Literary">Literary</option>
+            <option value="Cultural">Cultural</option>
+            <option value="Sports">Sports</option>
+          </select>
           <p class="help-block"></p>
         </div>
       </div>

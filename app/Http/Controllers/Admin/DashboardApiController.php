@@ -353,7 +353,8 @@ class DashboardApiController extends Controller
     $ach->name = $request->input("name","");
     $ach->description = $request->input("description", "");
     $ach->department = $request->input("department", "");
-    $ach->type = "0";
+    $ach->category = $request->input("category", "");
+    $ach->type = $request->input("type", "0");
     $ach->created_by = Auth::user()->id;
     $ach->updated_by = Auth::user()->id;
     $file = $request->image;

@@ -16,9 +16,10 @@ class CreateAchievementsTable extends Migration
     Schema::create('achievements', function (Blueprint $table) {
       $table->increments('id');
       $table->string('name')->nullable();
-      $table->enum('type',[0,1])->default("0");
+      $table->enum('type',[0,1,2])->default("0");
       $table->string('department')->nullable("0");
       $table->string('image')->nullable();
+      $table->string('category')->nullable();
       $table->longtext('description')->nullable();
       $table->integer("created_by")->nullable();
       $table->integer("updated_by")->nullable();
