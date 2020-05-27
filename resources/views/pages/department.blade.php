@@ -188,11 +188,32 @@
 							@endif
 						</div>
 					@endfor
+					@php
+					$categories = ["Academics", "Technical", "Literary", "Cultural", "Sports"];
+					@endphp
+					@foreach ($categories as $category)
+						<p>{{$category}}</p>
+						@foreach (App\Achievement::where('type','0')->where('department',$dep->url)->where('category', $category)->get() as $achivement)
+							<div class="col-xs-12 col-sm-12 col-md-6">
+								<div class="media">
+									<div class="col-sm-4" style="padding-bottom: 15px;">
+										<img src="{{$achivement->getUrl()}}" alt="">
+									</div>
+									<div class="media-body">
+										<h3 class="media-heading"><b>{{$achivement->name}}</b></h3>
+										<blockquote>
+											<a class="" style="cursor:pointer;" href="{{route('achievement',$achivement->id)}}">Read more</a>
+										</blockquote>
+									</div>
+								</div>
+							</div>
+						@endforeach
+					@endforeach
 				</div>
 				<div role="tabpanel" class="tab-pane" id="alumni">
 					<div class="row">
 						<h1 id="students-achievement" class="title text-center">Successful Alumni</h1>
-						@foreach (App\Achievement::where('type','0')->where('department',$dep->url)->get() as $achivement)
+						@foreach (App\Achievement::where('type','3')->where('department',$dep->url)->get() as $achivement)
 							<div class="col-xs-12 col-sm-12 col-md-6">
 								<div class="media">
 									<div class="col-xs-4 col-sm-4 col-md-4" style="padding-bottom: 15px;">

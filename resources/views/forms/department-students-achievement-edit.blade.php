@@ -18,6 +18,29 @@
         </div>
       </div>
       <div class="form-group">
+        <label class="control-label col-sm-2" for="name">Studnet Type:</label>
+        <div class="col-sm-9">
+          <select class="form-control" id="type" name="type">
+            <option value="0" {{$ach->type == '0'?'selected': ''}}>Student</option>
+            <option value="2" {{$ach->type == '2'?'selected': ''}}>Alumni</option>
+          </select>
+          <p class="help-block"></p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="name">Category:</label>
+        <div class="col-sm-9">
+          <select class="form-control" id="category" name="category">
+            <option value="Academics" {{$ach->type == 'Academics'?'selected': ''}}>Academics</option>
+            <option value="Technical" {{$ach->type == 'Technical'?'selected': ''}}>Technical</option>
+            <option value="Literary" {{$ach->type == 'Literary'?'selected': ''}}>Literary</option>
+            <option value="Cultural" {{$ach->type == 'Cultural'?'selected': ''}}>Cultural</option>
+            <option value="Sports" {{$ach->type == 'Sports'?'selected': ''}}>Sports</option>
+          </select>
+          <p class="help-block"></p>
+        </div>
+      </div>
+      <div class="form-group">
         <label class="control-label col-sm-2" for="image">Photo:</label>
         <div class="col-sm-9">
           <img src="{{$ach->getUrl()}}" class="img-thumbnail" width="172"/>
