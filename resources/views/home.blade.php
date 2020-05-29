@@ -120,7 +120,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="text-center" style="margin-bottom:20px;">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/1gR1xMbjUWs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<iframe width="560" height="315" src="https://www.youtube.com/watch?v=DOYA1SJINnA&t=3s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							<p style="font-size:18px; line-height:18px; margin-top:12px">Motivational message by Chairperson Dr. Harssh Khanna</p>
 						</div>
 					</div>
