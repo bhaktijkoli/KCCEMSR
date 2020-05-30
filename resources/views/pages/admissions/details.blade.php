@@ -21,7 +21,7 @@
 							</div>
 							<div class="space"></div>
 							{{-- <div class="" style="padding-bottom: 20px;">
-								<img src="{{url("images/Ad2020.jpg")}}">
+								<img src="{{url("images/ad2020.jpg")}}">
 							</div> --}}
 						</div>
 						<div class="col-md-6" style="text-align: justify;">
