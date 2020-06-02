@@ -53,6 +53,16 @@
 			</div>
 		</div>
 		<div class="row">
+			@php
+			$types = App\Committee::getAll();
+			function is_in_type($name, $types) {
+				foreach ($types as $type) {
+					if($name == $type->url)
+					return true;
+				}
+				return false;
+			}
+			@endphp
 			<div class="target-container container" style="overflow:hidden;">
 				@foreach (App\Event::orderBy('date','desc')->get() as $event)
 					@php
