@@ -213,7 +213,7 @@
 				<div role="tabpanel" class="tab-pane" id="alumni">
 					<div class="row">
 						<h1 id="students-achievement" class="title text-center">Successful Alumni</h1>
-						@foreach (App\Achievement::where('type','3')->where('department',$dep->url)->get() as $achivement)
+						@foreach (App\Achievement::where('type','2')->where('department',$dep->url)->get() as $achivement)
 							<div class="col-xs-12 col-sm-12 col-md-6">
 								<div class="media">
 									<div class="col-xs-4 col-sm-4 col-md-4" style="padding-bottom: 15px;">
