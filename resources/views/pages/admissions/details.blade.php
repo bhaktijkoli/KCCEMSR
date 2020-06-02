@@ -91,8 +91,7 @@
 	</div>
 </div>
 <!-- ================ -->
-<div class="section">
-		<div class="container">
+
 			<h1 class="text-center title" id="portfolio"><span>Our students are placed with the following companies</span></h1>
 			<div class="separator"></div>
 			<br>
@@ -118,8 +117,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
+	
 	<!-- section end -->
 
 @endsection
