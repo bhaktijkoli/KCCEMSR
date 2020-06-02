@@ -49,7 +49,7 @@
 					<i class="fa fa-handshake-o" style="color:#ffffff; font-size:36px; line-height:36px; vertical-align: middle;"></i>
 				</div>
 				<div>
-					<h3 style="text-align:center;">FE Admission</h3>
+					<h3 style="text-align:center;">Admission</h3>
 				</div>
 			</a>
 		</div>
