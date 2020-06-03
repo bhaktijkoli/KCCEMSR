@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('pre')
 	@php
-	$title = "Admissions 2018";
+	$title = "Admissions 2020";<!--Changed from 2018 to 2020-->
 	$menu_item = 'admissions';
 @endphp
 @endsection

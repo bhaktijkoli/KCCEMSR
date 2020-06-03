@@ -20,14 +20,14 @@
 			
 			<h3><span><strong>Bachelor Degree Programme (Direct Second Year):</strong></span>
 			<ul class="list-unstyled">
-				<li><i class="fa fa-caret-right pr-10 text-colored"></i> Computer Engineering</li>
-				<li><i class="fa fa-caret-right pr-10 text-colored"></i> Electronics &amp; Telecomm. Engineering</li>
-				<li><i class="fa fa-caret-right pr-10 text-colored"></i> Information Technology</li>
+				<li><i class="fa fa-caret-right pr-10 text-colored"></i> Computer Engineering (Intake - As per Norms)</li>
+				<li><i class="fa fa-caret-right pr-10 text-colored"></i> Electronics &amp; Telecomm. Engineering (Intake - As per Norms)</li>
+				<li><i class="fa fa-caret-right pr-10 text-colored"></i> Information Technology (Intake - As per Norms)</li>
 			</ul>
 
 			<div class="space"></div>
 			
-			<h3><span><strong>Masters Degree Programme:</strong></span>
+			<h3><span><strong>Masters Degree Programme: 60 Seats</strong></span>
 			<ul class="list-unstyled">
 				<li><i class="fa fa-caret-right pr-10 text-colored"></i> Finance</li>
 				<li><i class="fa fa-caret-right pr-10 text-colored"></i> Marketing</li>
