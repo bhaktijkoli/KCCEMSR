@@ -26,6 +26,7 @@
   <link rel="stylesheet" type="text/css" href="{{ asset('css/custom.css') }}">
   <link rel="stylesheet" type="text/css" href="{{ asset('css/select2.css') }}">
   <link rel="stylesheet" type="text/css" href="{{ asset('css/select2-bootstrap.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('css/socialmedia.css') }}">
   @yield('css')
 </head>
 <body class="no-trans">
