@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('pre')
 	@php
-	$title = "Admissions 2020";<!--Changed from 2018 to 2020-->
+	$title = "Admissions 2020";
 	$menu_item = 'admissions';
 @endphp
 @endsection
@@ -10,21 +10,21 @@
 		<div class="container main-content">
 			<div class="row">
 				<div class="col-md-12">
-					<h1 id="about" class="title text-center">Admissions <span>2020</span></h1>
+					<h1 id="about" class="title text-center">Admissions <span>2019</span></h1>
 					<div class="space"></div>
 					<div class="row">
-						<div class="col-md-6">
+					<div class="col-md-6">
 							{{-- <img src="http://via.placeholder.com/1140x615" alt=""> --}}
 							{{-- <iframe width="100%" height="300" src="https://www.youtube.com/embed/ciiMB8Mbg5g" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe> --}}
-							<div class="" style="">
+							<!--<div class="" style="">
 								<img src="{{url('images/KC_BANNER_AD.jpg')}}">
-							</div>
+							</div>-->
 							<div class="space"></div>
 							{{-- <div class="" style="padding-bottom: 20px;">
-							<img src="{{url("images/ad2020.jpg")}}">
+							<img src="{{url("images/KC_BANNER_AD.jpg")}}">
 						</div> --}}
-					</div>
-					<div class="col-md-6" style="text-align: justify;">
+						</div>
+						<div class="col-md-6" style="text-align: justify;">
 						<h1 style="font-size: 30px">Latest News</h1>
 						<ul class="list-unstyled resp-text-sub">
 							<h2 class="text-left align-marg" style="font-size: 120%; margin-bottom: 1%;">Excelssior Education Society's K.C. College of Engineering &amp; Management Studies &amp; Research, Thane</h2>
@@ -43,10 +43,10 @@
 							{{-- <p class="text-left align-marg" style="text-align: justify;">For more information on option form filling for CAP Round Guidance Visit us on 23/06/2018 at 11.30 AM</p> --}}
 						</ul>
 					</div>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="space"></div>
+			<div class="space"></div>
 		<div class="row">
 			<div class="col-sm-12">
 				<h1 class="text-center title" id="portfolio"><span>Events</span></h1>
