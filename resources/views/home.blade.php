@@ -357,6 +357,12 @@
 	</div>
 </div>
 
+<ul class="social-media-panel">
+	<li ><a href="https://www.linkedin.com/in/kccemsr/" target="_blank" class="linkedin"><img src="/images/social/linkedin.png"/></a></li>
+	<li ><a href="https://www.facebook.com/social.kc2001/" target="_blank" class="facebook"><img src="/images/social/facebook.png"/></a></li>
+	<li ><a href="https://twitter.com/kccemsr_social/" target="_blank" class="twitter"><img src="/images/social/twitter.png"/></a></li>
+	<li ><a href="https://www.instagram.com/kccemsr_social/" class="instagram"><img src="/images/social/instagram.png"/></a></li>
+</ul>
 
 <!-- footer start -->
 <!-- ================ -->

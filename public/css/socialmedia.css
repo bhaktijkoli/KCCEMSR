@@ -1,0 +1,90 @@
+.social-media-panel {
+  z-index: 1001;
+  position: fixed;
+  left: 0;
+  top: calc(50% - 110px);
+  width: 55px;
+  height: 220px;
+  padding: 0;
+  list-style: none;
+}
+.social-media-panel li {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: SocialFade;
+  animation-name: SocialFade;
+}
+.social-media-panel li:nth-of-type(2) {
+  -webkit-animation-delay: 2.05s;
+  animation-delay: 2.05s;
+}
+.social-media-panel li:nth-of-type(3) {
+  -webkit-animation-delay: 2.1s;
+  animation-delay: 2.1s;
+}
+.social-media-panel li:nth-of-type(4) {
+  -webkit-animation-delay: 2.15s;
+  animation-delay: 2.15s;
+}
+.social-media-panel a {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+  height: 55px;
+  margin-left: -20px;
+  transition: all 0.3s;
+}
+.social-media-panel img {
+  margin-left: 30px;
+  padding-top: 10px;
+  width: 35px;
+}
+.social-media-panel a:hover {
+  margin-left: 0;
+}
+.social-media-panel .facebook {
+  background: #4868ad;
+}
+.social-media-panel .twitter {
+  background: #3299ff;
+}
+.social-media-panel .instagram {
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+}
+.social-media-panel .linkedin {
+  background: #0e76a8;
+}
+@media screen and (max-width: 480px) {
+  .social-media-panel {
+    display: none;
+  }
+}
+@-webkit-keyframes SocialFade {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes SocialFade {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
