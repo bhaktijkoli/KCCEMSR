@@ -411,7 +411,7 @@ class DashboardApiController extends Controller
   public function removeStudentAchievement(Request $request)
   {
     $id = $request->input("id","-1");
-    $ach = Achievement::where("id",$id)->where("type","0")->first();
+    $ach = Achievement::where("id",$id)->first();
     if(!$ach) abort(404, 'Not Found');
     $ach->removeImage();
     $ach->forceDelete();
