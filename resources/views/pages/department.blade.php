@@ -155,7 +155,7 @@
 					@endphp
 					@for ($i=$start; $i <= $end; $i++)
 						<div class="row">
-							<h2 class="media-heading text-center" style="margin-bottom: 25px;">{{$dep->isMMS?$arrayYearsMMS[i]:$arrayYears[$i]}}</h2>
+							<h2 class="media-heading text-center" style="margin-bottom: 25px;">{{$dep->isMMS()?$arrayYearsMMS[$i]:$arrayYears[$i]}}</h2>
 							@php
 							$top1 = App\AcademicTopper::where('department',$dep->url)->where('year', $i)->orderBy('pointer','DESC')->first();
 							$top2 = App\AcademicTopper::where('department',$dep->url)->where('year', $i)->orderBy('pointer','DESC')->skip(1)->first();
