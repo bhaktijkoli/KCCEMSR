@@ -158,6 +158,9 @@
                 <select class="form-control" id="topper_year" name="topper_year">
                   @if ($dep->isPrimary())
                     <option value="1">FE</option>
+                  @elseif($dep->isMMS())
+                    <option value="1">FY</option>
+                    <option value="2">SY</option>
                   @else
                     <option value="2">SE</option>
                     <option value="3">TE</option>

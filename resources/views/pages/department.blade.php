@@ -141,16 +141,21 @@
 					<p class="lead text-center" style="margin-top: 30px;">Some of our academic scholars are listed below...</p>
 					@php
 					$arrayYears = ["", "FE", "SE", "TE", "BE"];
+					$arrayYearsMMS = ["", "FY", "SY"];
 					$start = 2;
 					$end = 4;
 					if($dep->isPrimary()) {
 						$start = 1;
 						$end = 1;
 					}
+					if($dep-<isMMS()) {
+						$start = 1;
+						$end = 2;
+					}
 					@endphp
 					@for ($i=$start; $i <= $end; $i++)
 						<div class="row">
-							<h2 class="media-heading text-center" style="margin-bottom: 25px;">{{$arrayYears[$i]}}</h2>
+							<h2 class="media-heading text-center" style="margin-bottom: 25px;">{{$dep->isMMS?$arrayYearsMMS[i]:$arrayYears[$i]}}</h2>
 							@php
 							$top1 = App\AcademicTopper::where('department',$dep->url)->where('year', $i)->orderBy('pointer','DESC')->first();
 							$top2 = App\AcademicTopper::where('department',$dep->url)->where('year', $i)->orderBy('pointer','DESC')->skip(1)->first();

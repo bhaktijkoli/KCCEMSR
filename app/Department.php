@@ -49,4 +49,10 @@ class Department extends Model
     return false;
   }
 
+  public function isMMS()
+  {
+    if($this->url == "mms") return true;
+    return false;
+  }
+
 }
