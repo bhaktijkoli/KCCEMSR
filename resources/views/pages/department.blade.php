@@ -148,7 +148,7 @@
 						$start = 1;
 						$end = 1;
 					}
-					if($dep-<isMMS()) {
+					if($dep->isMMS()) {
 						$start = 1;
 						$end = 2;
 					}
