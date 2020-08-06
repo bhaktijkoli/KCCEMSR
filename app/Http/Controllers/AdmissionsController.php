@@ -17,11 +17,11 @@ class AdmissionsController extends Controller
   }
   public function get($action)
   {
-    if($action == "aicte-affiliation") return view('pages.aicte-affiliation');
-    if($action == "total-intake") return view('pages.total-intake');
-    if($action == "scholarship") return view('pages.scholarship');
+    if ($action == "aicte-affiliation") return view('pages.aicte-affiliation');
+    if ($action == "total-intake") return view('pages.total-intake');
+    if ($action == "scholarship") return view('pages.scholarship');
     $file = FileUpload::where('type', $action)->first();
-    if(!$file) abort("404");
+    if (!$file) abort("404");
     $admission_list = FileUpload::admission_list;
     $admission_name_list = FileUpload::admission_name_list;
     $title = $admission_name_list[array_search($action, $admission_list)];
@@ -31,12 +31,13 @@ class AdmissionsController extends Controller
   }
   public function applyOnline()
   {
-    if(Auth::check()) {
+    if (Auth::check()) {
       return redirect()->route('admissions-application');
     }
     return view('pages.admissions.apply');
   }
-  public function details() {
+  public function details()
+  {
     return view('pages.admissions.details');
   }
   public function studentApplication()
@@ -61,11 +62,15 @@ class AdmissionsController extends Controller
       'email' => $to_email,
     ]);
 
-    Mail::send('mails.mockcet', ['name'=>$name], function($message) use($to_email)  {
+    Mail::send('mails.mockcet', ['name' => $name], function ($message) use ($to_email) {
       $message->subject("MOCK CET 2020 Test");
-      if(strpos(env('MAIL_USERNAME'), "@"))$message->from(env('MAIL_USERNAME'), 'kccemsr.edu.in');
+      if (strpos(env('MAIL_USERNAME'), "@")) $message->from(env('MAIL_USERNAME'), 'kccemsr.edu.in');
       $message->to($to_email);
     });
-    return view('pages.admissions.mockcet2020')->with(['success'=>true]);
+    return view('pages.admissions.mockcet2020')->with(['success' => true]);
+  }
+  public function getFeesDetails()
+  {
+    return view('pages.admissions.fees');
   }
 }
