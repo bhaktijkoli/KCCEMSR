@@ -78,6 +78,7 @@
 								<li><a href="{{route('admissions', 'anti-ragging-affidavit')}}">Anti-ragging Affidavit</a></li>
 								<li><a href="{{route('admissions', 'scholarship')}}">Scholarship</a></li>
 								<li><a href="{{route('mockcet2020')}}">Mock CET 2020</a></li>
+								<li><a href="{{route('admissions-fees')}}">Fees Details</a></li>
 							</ul>
 						</li>
 						<li class="has-dropdown">

@@ -1,7 +1,10 @@
 {
     "name": "laravel/laravel",
     "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
     "license": "MIT",
     "type": "project",
     "require": {
@@ -10,8 +13,7 @@
         "intervention/image": "^2.4",
         "laravel/framework": "5.4.*",
         "laravel/tinker": "~1.0",
-        "msurguy/honeypot": "^1.0",
-        "pusher/pusher-php-server": "~3.0"
+        "msurguy/honeypot": "^1.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
