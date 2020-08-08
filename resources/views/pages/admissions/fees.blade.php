@@ -29,21 +29,24 @@
                             </tr>
                         </table>
                     </div>
+                    <p>College Bank Account Details for outstanding fees online payment:</p>
                     <div class="table-responsive">
                         <table class="table">
                             <tr>
                                 <th>Bank Name and branch</th>
                                 <th>Account name</th>
-                                <th>9</th>
-                                <th>A.Y. 2017-18</th>
-                                <th>A.Y. 2016-17</th>
+                                <th>Account number</th>
+                                <th>IFSC Code</th>
                             </tr>
                             <tr>
-                                <th>Fees Structure</th>
-                                <td>135000</td>
-                                <td>130000</td>
-                                <td>130000</td>
-                                <td>130000</td>
+                                <td>
+                                    Punjab National Bank
+                                    Branch Code – 330300
+                                    S. V. Nagar, Near Bharat School, Kopri, Thane [East] 400603.
+                                </td>
+                                <td>K C COLLEGE OF ENGINEERING AND MANAGEMENT STUDIES AND RESEARCH</td>
+                                <td>3303000100152743</td>
+                                <td>PUNB0330300</td>
                             </tr>
                         </table>
                     </div>
