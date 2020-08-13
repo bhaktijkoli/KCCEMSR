@@ -11,43 +11,45 @@ class FileUpload extends Model
   protected $table = "fileuploads";
   public $timestamps = true;
 
-  const admission_list = ['admission-criteria', 'fees-notices', 'institute-prospectus', 'dte-admission-information-brochure', 'cap-rount-allottment', 'direct-second-year', 'anti-ragging-affidavit', 'scholarship', 'mandatory-disclosure', 'aicte-affiliation', 'nirf-data', 'dte', 'university-affiliation', 'code-of-conduct', 'student-council', 'student-handbook', 'student-discipline', 'hr-handbook', 'AQAR-2018-19', 'NAAC Course Outcome'];
-  const admission_name_list = ['Admission Criteria', 'Fees Notices', 'Institute Prospectus', 'Dte Admission Information Brochure', 'Cap Rount Allottment', 'Direct Second Year', 'Anti Ragging Affidavit', 'Scholarship', 'Mandatory Disclosure', 'AICTE Affiliation', 'NIRF Data', 'DTE', 'University Affiliation' , 'Code Of Conduct', 'Student Council', "Student Handbook", 'Student Discipline', 'HR Handbook', 'AQAR 2018-19', 'naac-course-outcome'];
+  const admission_list = ['admission-criteria', 'fees-notices', 'institute-prospectus', 'dte-admission-information-brochure', 'cap-rount-allottment', 'direct-second-year', 'anti-ragging-affidavit', 'scholarship', 'mandatory-disclosure', 'aicte-affiliation', 'nirf-data', 'dte', 'university-affiliation', 'code-of-conduct', 'student-council', 'student-handbook', 'student-discipline', 'hr-handbook', 'AQAR-2018-19', 'AQAR-2019-20', 'NAAC Course Outcome'];
+  const admission_name_list = ['Admission Criteria', 'Fees Notices', 'Institute Prospectus', 'Dte Admission Information Brochure', 'Cap Rount Allottment', 'Direct Second Year', 'Anti Ragging Affidavit', 'Scholarship', 'Mandatory Disclosure', 'AICTE Affiliation', 'NIRF Data', 'DTE', 'University Affiliation', 'Code Of Conduct', 'Student Council', "Student Handbook", 'Student Discipline', 'HR Handbook', 'AQAR 2018-19', 'AQAR 2019-20', 'naac-course-outcome'];
 
   const library_list = ['question-papers', 'e-books', 'syllabus', 'exam-notices', 'exam-timetable', 'exam-results'];
   const library_list_name = ['Question Papers', 'E-Books', 'Syllabus', 'Exam Notices', 'Exam Timetable', 'Exam Results'];
 
-  public function getUrl($path="public/files/") {
+  public function getUrl($path = "public/files/")
+  {
     return url($path . $this->filename);
   }
 
-  public function uploadFile($file, $filename="", $path="public/files/")
+  public function uploadFile($file, $filename = "", $path = "public/files/")
   {
     $this->checkDirs($path);
-    if($filename=="") {
+    if ($filename == "") {
       $filename = $file->getClientOriginalName();
-      if(file_exists(public_path($path) . $filename)) {
-        $filename = str_replace('.' . $file->clientExtension(), '', $filename) .'-' . uniqid() . '.' . $file->clientExtension();
+      if (file_exists(public_path($path) . $filename)) {
+        $filename = str_replace('.' . $file->clientExtension(), '', $filename) . '-' . uniqid() . '.' . $file->clientExtension();
       }
-    }else {
+    } else {
       $filename = $filename  . '.' . $file->clientExtension();
     }
     $file->move(public_path($path), $filename);
     return $filename;
   }
 
-  public function checkDirs($path="public/files/") {
+  public function checkDirs($path = "public/files/")
+  {
     $path = public_path($path);
     File::isDirectory($path) or File::makeDirectory($path, 0777, true, true);
   }
 
-  public function deleteFile($path="public/files/")
+  public function deleteFile($path = "public/files/")
   {
     $path = public_path($path);
     File::delete($path . $this->filename);
   }
 
-  public function deleteFileByName($filename, $path="public/files/")
+  public function deleteFileByName($filename, $path = "public/files/")
   {
     $path = public_path($path);
     File::delete($path . $filename);
@@ -57,24 +59,24 @@ class FileUpload extends Model
   {
     switch ($this->year) {
       case '1':
-      return "FE";
+        return "FE";
       case '2':
-      return "SE";
+        return "SE";
       case '3':
-      return "TE";
+        return "TE";
       case '4':
-      return "BE";
+        return "BE";
       default:
-      return "Undefined";
+        return "Undefined";
     }
   }
   public static function getSectionArray()
   {
     $sections = [];
-    for($i=2013;$i<date('Y');$i++) {
+    for ($i = 2013; $i < date('Y'); $i++) {
       array_push($sections, "May $i", "Dec $i");
     }
-    if(date('n')>6) array_push($sections, "May $i");
+    if (date('n') > 6) array_push($sections, "May $i");
     return $sections;
   }
 }

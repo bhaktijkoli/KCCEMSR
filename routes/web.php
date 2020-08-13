@@ -27,6 +27,7 @@ Route::middleware([MaintenanceCheck::class])->group(function () {
   Route::get('/naac/sop', 'AboutController@getSOP')->name('naac-sop');
   Route::get('/naac/feedback', 'AboutController@getFeedback')->name('naac-feedback');
   Route::get('/naac/AQAR-2018-19', 'AboutController@getAQAR201819')->name('naac-AQAR-2018-19');
+  Route::get('/naac/AQAR-2019-20', 'AboutController@getAQAR201920')->name('naac-AQAR-2019-20');
   Route::get('/naac/course-outcome', 'AboutController@getCourseOutcome')->name('naac-course-outcome');
   Route::get('/naac/sss', 'AboutController@getSSS')->name('naac-sss');
   Route::get('/naac/naac-institutional-distinctiveness', 'AboutController@getInstitutionalDistinctiveness')->name('naac-institutional-distinctiveness');
