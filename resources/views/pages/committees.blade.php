@@ -83,8 +83,8 @@
 							</tr>
 							<tr>
 								<td>12</td>
-								<td>Prof               Sonal Balpande</td
-								<td>Mem                                                                                                                                                                                                                                                                                                                       xcvbkl4+ber</td>
+								<td>Prof Sonal Balpande</td>
+								<td>Member</td>
 							</tr>
 							<tr>
 								<td>13</td>
