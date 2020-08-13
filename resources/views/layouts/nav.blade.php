@@ -153,6 +153,7 @@
 										{{-- <li><a href="{{route('about')}}">Board of Governance</a></li> --}}
 										<li><a href="{{route('infrastructures')}}">Infrastructure</a></li>
 										<li><a href="{{route('committees')}}">Committees</a></li>
+										<li><a href="{{route('grievance-redressal')}}">Grievance Redressal</a></li>
 										{{-- <li><a href="{{route('careeratkc')}}">Career At KC</a></li> --}}
 									</ul>
 								</li>

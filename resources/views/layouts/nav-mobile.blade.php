@@ -37,6 +37,7 @@
 								{{-- <li><a href="{{route('about')}}">Board of Governance</a></li> --}}
 								<li><a href="{{route('infrastructures')}}">Infrastructure</a></li>
 								<li><a href="{{route('committees')}}">Committees</a></li>
+								<li><a href="{{route('grievance-redressal')}}">Grievance Redressal</a></li>
 								{{-- <li><a href="{{route('careeratkc')}}">Career At KC</a></li> --}}
 							</ul>
 						</li>
@@ -124,6 +125,7 @@
 								<li><a href="{{route('naac-sop')}}">SOP</a></li>
 								<li><a href="{{route('naac-feedback')}}">Feedback</a></li>
 								<li><a href="{{route('naac-AQAR-2018-19')}}">AQAR-2018-19</a></li>
+								<li><a href="{{route('naac-AQAR-2019-20')}}">AQAR-2019-20</a></li>
 								<li><a href="{{route('naac-course-outcome')}}">Course Outcome</a></li>
 								<li><a href="{{route('naac-sss')}}">SSS</a></li>
 								<li><a href="{{route('naac-institutional-distinctiveness')}}">Institutional Distinctiveness</a></li>
