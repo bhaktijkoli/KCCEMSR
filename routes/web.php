@@ -32,6 +32,7 @@ Route::middleware([MaintenanceCheck::class])->group(function () {
   Route::get('/naac/sss', 'AboutController@getSSS')->name('naac-sss');
   Route::get('/naac/naac-institutional-distinctiveness', 'AboutController@getInstitutionalDistinctiveness')->name('naac-institutional-distinctiveness');
   Route::get('/naac/best-practices', 'AboutController@getBestPractices')->name('naac-best-practices');
+  Route::get('/naac/academic-calendar-2018-19', 'AboutController@getAcademicCalender201819')->name('naac-academic-calendar-2018-19');
   Route::get('/industrial-institute-interaction', 'AboutController@getIndustryInstituteInteraction')->name('industrial-institute-interaction');
 
   Route::get('/departments', 'DepartmentController@getList')->name('department-list');

@@ -69,6 +69,15 @@ class AboutController extends Controller
     $menu_item = "naac";
     return view('pages.pdfview', compact("title", "url", "menu_item"));
   }
+  public function getAcademicCalender201819()
+  {
+    $file = FileUpload::where('type', 'academic-calendar-2018-19')->first();
+    if (!$file) abort("404");
+    $title = $file->name;
+    $url = $file->getUrl();
+    $menu_item = "naac";
+    return view('pages.pdfview', compact("title", "url", "menu_item"));
+  }
   public function getCourseOutcome()
   {
     return redirect('/public/naac/course-outcome.pdf');

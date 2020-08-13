@@ -130,6 +130,7 @@
 								<li><a href="{{route('naac-sss')}}">SSS</a></li>
 								<li><a href="{{route('naac-institutional-distinctiveness')}}">Institutional Distinctiveness</a></li>
 								<li><a href="{{route('naac-best-practices')}}">Best Practices</a></li>
+								<li><a href="{{route('naac-academic-calendar-2018-19')}}">Academic Calender 2018-19</a></li>
 							</ul>
 						</li>
 						{{-- <li class="has-dropdown">
