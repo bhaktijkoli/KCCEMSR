@@ -9,8 +9,8 @@
 @section('content')
 	<!-- banner start -->
 	<!-- ================ -->
-	<a href="{{route('mockcet2020')}}" id="notification"><i class="fa fa-bell">
-		<p class="bubble speech" id="bell_info" style="color:black">Click the bell for Mock CET Test
+	<a href="https://docs.google.com/forms/d/e/1FAIpQLSe2Eq5iH-9qlocFqz6rrnpa7Qc2gu6n6xJQaLe3eaLBqfbLiQ/viewform" id="notification"><i class="fa fa-bell">
+		<p class="bubble speech" id="bell_info" style="color:black">Click the bell for Admission Enquiry
 		</p>
 	</i></a>
 
