@@ -98,6 +98,9 @@ Route::middleware([MaintenanceCheck::class])->group(function () {
   Route::get('/my-kc-quarantine-story', function () {
     return view('pages.quarantine-story');
   })->name('quarantine-story');
+
+  Route::get('/blogs', 'BlogController@blogs');
+  Route::get('/blogs/{url}', 'BlogController@details');
 });
 
 

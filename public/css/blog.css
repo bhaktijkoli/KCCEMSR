@@ -1,0 +1,116 @@
+.blog-panel {
+    position: relative;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+.blog-panel-border {
+    border: 2px solid #339BEB;
+}
+.blog-panel-header {
+    font-size: 18px;
+    background-color: #339BEB;
+    padding: 5px 10px;
+    color: #FFF;
+}
+.blog-panel-img {
+    position: relative;
+    overflow: hidden;
+}
+.blog-panel-img .category-tag {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 18px;
+    background-color: #339BEB;
+    padding: 5px 10px;
+    color: #FFF;
+    padding: 5px 30px 5px 20px;
+    width: fit-content;
+    z-index: 100;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+}
+.blog-panel-img img{
+    width: 100%;
+    height: 100%;
+    transition: all 300ms;
+}
+.blog-panel-img:hover img {
+    transform: scale(1.2) rotate(5deg);
+}
+.blog-panel-img .backdrop{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #00000060;
+}
+.blog-panel-img .blog-details {
+    padding: 10px 15px;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+}
+.blog-panel-img .blog-details .blog-title {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+.blog-panel-img .blog-details .blog-subtitle {
+    color: #c5c5c5;
+    font-size: 14px;
+}
+.blog-panel-body {
+    padding: 5px 10px;
+}
+.categories-list {
+    list-style: none;
+    padding-left: 0px;
+}
+.category-name {
+    background-color: #f1eded;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.sub-category-name {
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.blog-heading {
+    padding: 0px 30px;
+}
+.blog-category-tag {
+    margin: 10px 30px;
+    font-size: 18px;
+    background-color: #339BEB;
+    padding: 5px 10px;
+    color: #FFF;
+    padding: 5px 30px 5px 20px;
+    width: fit-content;
+    z-index: 100;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+}
+.blog-img {
+    width: 100%;
+}
+.blog-body {
+    padding: 10px 30px;
+}
+.blog-comments {
+    padding: 10px 30px;
+}
+.blog-comment {
+    border-top: 1px solid #eee;
+    padding: 10px 5px;
+}
+.media-left img {
+    background: #dedede;
+    padding: 2px;
+}
+.blog-comment-reply {
+    padding: 10px 5px;
+}
