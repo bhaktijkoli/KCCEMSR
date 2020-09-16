@@ -1,14 +1,14 @@
 @extends('layouts.master')
 @section('pre')
 	@php
-	$title = "Helpline Numbers fof Examination 2020";
+	$title = "Helpline Numbers for Examination 2020";
 	$menu_item = 'exam';
 @endphp
 @endsection
 @section('content')
 	<div class="section clearfix object-non-visible" data-animation-effect="fadeIn">
 		<div class="container main-content-sub">
-			<h1 class="text-center"><strong><span>Helpline Numbers fof Examination 2020</span></strong></h1>
+			<h1 class="text-center"><strong><span>Helpline Numbers for Examination 2020</span></strong></h1>
 			<hr>
 			<ul class="list-unstyled resp-text-sub" style="margin-left: 12px;">
 				<li>Sonal Balpande (Computer Department)<br><small>9967581913</small></li>
