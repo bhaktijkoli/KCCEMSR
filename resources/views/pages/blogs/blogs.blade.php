@@ -1,7 +1,6 @@
 @extends('layouts.master')
 @section('pre')
 	@php
-	$title = "Latest Blogs";
 	$menu_item = 'blogs';
 @endphp
 @endsection
@@ -13,7 +12,7 @@
         <div class="container main-content-sub tab-pane fade in">
             <div class="row">
                 <div class="col-lg-9">
-                    <h5>Latest Blogs</h5>
+                    <h5>{{$title}}</h5>
                     <div class="row">
                         @php
                             $columns = [8,4,4];
@@ -46,7 +45,7 @@
                             @foreach ($categories as $category)
                             <li class="category-name">{{$category->name}}</li> 
                             @foreach ($category->sub_categories as $cat)
-                            <li class="sub-category-name">{{$cat->name}}</li> 
+                                <li class="sub-category-name"><a href="/blogs/category/{{$cat->slug}}">{{$cat->name}}</a></li> 
                             @endforeach
                             @endforeach
                         </ul>

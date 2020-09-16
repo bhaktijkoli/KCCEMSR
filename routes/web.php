@@ -100,6 +100,7 @@ Route::middleware([MaintenanceCheck::class])->group(function () {
   })->name('quarantine-story');
 
   Route::get('/blogs', 'BlogController@blogs');
+  Route::get('/blogs/category/{category}', 'BlogController@category');
   Route::get('/blogs/{url}', 'BlogController@details');
 });
 
