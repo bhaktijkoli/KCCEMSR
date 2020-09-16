@@ -44,7 +44,7 @@ Route::middleware([MaintenanceCheck::class])->group(function () {
   Route::get('/academics/notices/{id}', 'AcademicsController@getNoticeById')->name('notice-id');
   Route::get('/academics/staff-notices', 'AcademicsController@getStaffNotices')->name('staff-notices');
   Route::get('/academics/staff-notices/{id}', 'AcademicsController@getStaffNoticebyId')->name('staff-notices-id');
-  Route::get('/academics/exam/helpline-number-examination-2020', 'AcademicsController@getExamHelpline')->name('exam-helpline');
+  Route::get('/academics/exam/helpline-numbers-examination-2020', 'AcademicsController@getExamHelpline')->name('exam-helpline');
   Route::get('/academics/exam/{action}', 'AcademicsController@getExam')->name('exam');
   Route::get('/academics/exam/{action}/{id}', 'AcademicsController@getExamByID')->name('exam-id');
   Route::get('/academics/publications', 'AcademicsController@getPublications')->name('publications');
