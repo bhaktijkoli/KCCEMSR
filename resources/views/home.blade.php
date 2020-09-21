@@ -385,7 +385,7 @@
 							</li>
 							<li><i class="fa fa-phone pr-10"></i>&nbsp;{{setting('contact-phone')}}</li>
 							<li><i class="fa fa-whatsapp pr-10"></i>&nbsp;9594477844</li>
-							<li><i class="fa fa-volume-control-phone pr-10"></i>&nbsp;8448385585</li>
+							<li><i class="fa fa-volume-control-phone pr-10"></i>&nbsp;9594477844</li>
 						</ul>
 					</div>
 				</div>
