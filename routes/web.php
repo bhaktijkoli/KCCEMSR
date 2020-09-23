@@ -44,9 +44,13 @@ Route::middleware([MaintenanceCheck::class])->group(function () {
   Route::get('/academics/notices/{id}', 'AcademicsController@getNoticeById')->name('notice-id');
   Route::get('/academics/staff-notices', 'AcademicsController@getStaffNotices')->name('staff-notices');
   Route::get('/academics/staff-notices/{id}', 'AcademicsController@getStaffNoticebyId')->name('staff-notices-id');
+  Route::get('/academics/exam/sample-question-paper-kt-exam-2020', function() {
+    return view('pages.exam.sample-question-paper-kt-exam-2020')
+  })->name('sample-question-paper-kt-exam-2020');
   Route::get('/academics/exam/helpline-numbers-examination-2020', 'AcademicsController@getExamHelpline')->name('exam-helpline');
   Route::get('/academics/exam/{action}', 'AcademicsController@getExam')->name('exam');
   Route::get('/academics/exam/{action}/{id}', 'AcademicsController@getExamByID')->name('exam-id');
+
   Route::get('/academics/publications', 'AcademicsController@getPublications')->name('publications');
   Route::get('/academics/newsletter', 'AcademicsController@getNewsletter')->name('newsletter');
   Route::get('/academics/research-and-Development/{action}', 'AcademicsController@getResearchAndDevelopment')->name('rd');

@@ -204,6 +204,7 @@
 										{{-- <li><a href="{{route('exam', 'results')}}">Exam Results</a></li> --}}
 										<li><a href="#">Exam Rules &amp; Procedures</a></li>
 										<li><a href="{{route('exam-helpline')}}">Helpline Numbers for Examination 2020</a></li>
+										<li><a href="{{route('sample-question-paper-kt-exam-2020')}}">Sample Question Paper KT Exam 2020</a></li>
 										<li><a href="https://docs.google.com/forms/d/e/1FAIpQLScof6pqGTqb7pEzgpRC74dhAAWOAb4E_TtZmUaj1ZcCevEuYg/viewform">Transcript Application Form</a></li>
 									</ul>
 								</li>
