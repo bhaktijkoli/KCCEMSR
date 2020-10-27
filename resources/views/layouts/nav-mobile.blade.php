@@ -13,12 +13,12 @@
 					</div>
 					<ul>
 						@if (Auth::check())
-							@if (Auth::user()->type == 1)
-								<li style="background-color: #ffffff;">
-									<a href="" class="inactiveLink" style="color: black;font-weight: bold;">Hello, {{Auth::user()->fullname}}</a>
-									<a href="" id="hover_black_nav" style="color: black;font-weight: bold;text-align: right;padding-right: 5%;">Logout</a>
-								</li>
-							@endif
+						@if (Auth::user()->type == 1)
+						<li style="background-color: #ffffff;">
+							<a href="" class="inactiveLink" style="color: black;font-weight: bold;">Hello, {{Auth::user()->fullname}}</a>
+							<a href="" id="hover_black_nav" style="color: black;font-weight: bold;text-align: right;padding-right: 5%;">Logout</a>
+						</li>
+						@endif
 						@endif
 						{{-- <li>
 							<a href="/">Home</a>
@@ -134,6 +134,7 @@
 								<li><a href="{{route('naac-institutional-distinctiveness')}}">Institutional Distinctiveness</a></li>
 								<li><a href="{{route('naac-best-practices')}}">Best Practices</a></li>
 								<li><a href="{{route('naac-academic-calendar-2018-19')}}">Academic Calender 2018-19</a></li>
+								<li><a href="/public/naac/audited-statements.zip">Audited Statement from 2016 to 2018</a></li>
 							</ul>
 						</li>
 						{{-- <li class="has-dropdown">
@@ -164,21 +165,21 @@
 					</ul>
 				</nav>
 			</div>
-
+			
 			<!--NAV DATA END-->
-
+			
 			<div class="clg-name container">
 				<div class="header-left clearfix">
-
+					
 					<div class="logo smooth-scroll"  style="float: left;">
 						<a href="/"><img id="logo" src="{{ asset('images/logo.png') }}" alt="KC College logo" height="65" width="65"></a>
 					</div>
-
+					
 					<div class="smooth-scroll">
 						<div class="site-name" style="padding-bottom: 0px;">
 							<p style="font-size: 0.6em;margin: 0px;padding: 0px;line-height: 0.8;">Excelssior Education Society's</p>
 							<a href="/" id="head-site-name" style="text-decoration:none;">K.C. College of Engineering &amp; Management Studies &amp; Research</a>
-					<p class="lead" style="margin:0px;font-weight:900;font-size:15px;">NAAC Accredited with B++ Grade</p>
+							<p class="lead" style="margin:0px;font-weight:900;font-size:15px;">NAAC Accredited with B++ Grade</p>
 						</div>
 					</div>
 				</div>
