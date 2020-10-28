@@ -244,7 +244,6 @@
 									<li><a href="{{route('naac-institutional-distinctiveness')}}">Institutional Distinctiveness</a></li>
 									<li><a href="{{route('naac-best-practices')}}">Best Practices</a></li>
 									<li><a href="{{route('naac-academic-calendar-2018-19')}}">Academic Calender 2018-19</a></li>
-									<li><a href="/public/naac/audited-statements.zip">Audited Statement from 2016 to 2018</a></li>
 								</ul>
 							</li>
 							<li class="{{$menu_item=='iqac'?'active':''}} sub-menu-parent"><a href="{{route('iqac', 'introduction')}}">IQAC</a></li>
