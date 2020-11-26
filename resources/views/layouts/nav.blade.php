@@ -81,6 +81,7 @@
 								<li><a href="{{route('crowning-glory')}}">Crowning Glory</a></li>
 								{{-- <li><a href="{{route('industrial-institute-interaction')}}">Industry Institute Interaction</a></li> --}}
 								<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSe2Eq5iH-9qlocFqz6rrnpa7Qc2gu6n6xJQaLe3eaLBqfbLiQ/viewform" style="text-shadow: 1px 1px 1.4px #48a9ed;">Admission Enquiry</a></li>
+								<li><a href="https://forms.gle/cGCfTtUrfDSbfGEb7" style="text-shadow: 1px 1px 1.4px #48a9ed;">Scholarship Exam</a></li>
 							</ul>
 						</div>
 					</div>
