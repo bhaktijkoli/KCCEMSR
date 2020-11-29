@@ -444,6 +444,23 @@
 
 </footer>
 <!-- footer end -->
+<div class="modal" id="openingModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+		  <img src="/images/splash_banner.jpeg"/>
+		  <div class="text-center" style="margin-top:10px">
+			<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+		  </div>
+      </div>
+    </div>
+  </div>
+</div>
 @endsection
 @section('post')
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#openingModal').modal('show');
+	})
+</script>
 @endsection
