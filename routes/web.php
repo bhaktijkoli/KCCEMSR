@@ -104,6 +104,11 @@ Route::middleware([MaintenanceCheck::class])->group(function () {
     return view('pages.quarantine-story');
   })->name('quarantine-story');
 
+  //Scholarship
+  Route::get('/scholarship-scheme', function () {
+    return view('pages.admissions.scholarship-scheme');
+  })->name('scholarship-scheme');
+
   Route::get('/blogs', 'BlogController@blogs');
   Route::get('/blogs/category/{category}', 'BlogController@category');
   Route::get('/blogs/{url}', 'BlogController@details');
