@@ -196,6 +196,7 @@
 										<li><a href="{{route('admissions', 'scholarship')}}">Scholarship</a></li>
 										<li><a href="{{route('mockcet2020')}}">Mock CET 2020</a></li>
 										<li><a href="{{route('admissions-fees')}}">Fees Details</a></li>
+										<li><a href="https://practiceform.learningatkc.com">Practice Registration Form for Engineering</a></li>
 									</ul>
 								</li>
 								<li class=" sub-menu-parent"><a href="#">Exam</a>
