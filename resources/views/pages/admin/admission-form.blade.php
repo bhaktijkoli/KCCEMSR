@@ -24,7 +24,14 @@
       <div class="col-xs-12">
         <div class="box">
           <div class="box-header">
-            <h3 class="box-title">All Admission Forms</h3>
+            <div class="row">
+              <div class="col-sm-6">
+                <h3 class="box-title">All Admission Forms</h3>
+              </div>
+              <div class="col-sm-6 text-right">
+              <a class="btn btn-primary btn-sm" href="{{route('admin_admission_form.export')}}">Export</a>
+              </div>
+            </div>
           </div>
           <!-- /.box-header -->
           <div class="box-body">

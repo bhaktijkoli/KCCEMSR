@@ -177,7 +177,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
-        Akaunting\Setting\Provider::class
+        Akaunting\Setting\Provider::class,
+        Maatwebsite\Excel\ExcelServiceProvider::class,
 
     ],
 
@@ -230,6 +231,7 @@ return [
         'Image' => Intervention\Image\Facades\Image::class,
         'Setting' => Akaunting\Setting\Facade::class,
         'Pusher' => Pusher\Pusher::class,
+        'Excel' => Maatwebsite\Excel\Facades\Excel::class,
     ],
 
 ];
