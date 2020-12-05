@@ -28,7 +28,7 @@ $nonav = true;
 		@endif
 		<form id="form-admission" method="post" class="grid-form" enctype="multipart/form-data">
 			{{ csrf_field() }}
-			@if (isset($data->image))
+			@if (isset($data->image) && gettype($data->image) === 'string')
 			<fieldset>
 				<legend>Photograph</legend>
 				<div data-row-span="4">
