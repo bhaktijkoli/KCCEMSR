@@ -76,7 +76,6 @@
 					<li>Step 2: Login</li>
 					<li>Step 3: Online form filling</li>
 					<li>Step 4: Document Upload</li>
-					<li>Step 5: Take printout of filled application form and report to the college for further processing.</li>
 				</ul>
 			</div>
 
