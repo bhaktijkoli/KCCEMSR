@@ -95,6 +95,9 @@ class AdmissionsController extends Controller
       $admission->deleteImage();
       $admission->uploadImage($request->file('image'));
     }
+    if ($request->file('image')) {
+      $data['image'] = $request->file('image')->store('admission_applications');
+    }
     if ($request->file('ssc_marksheet')) {
       $data['ssc_marksheet'] = $request->file('ssc_marksheet')->store('admission_applications');
     }
