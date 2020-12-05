@@ -48,7 +48,7 @@
                 @php
                   $no = 1;
                 @endphp
-                @foreach (App\User::where('type','1')->get() as $user)
+                @foreach (App\User::where('type','1')->latest()->get() as $user)
                   @php
                     $admission = App\Admission::where('userid', $user->id)->where('completed', '1')->first();
                     if(!$admission) continue;
