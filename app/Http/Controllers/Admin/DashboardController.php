@@ -163,6 +163,7 @@ class DashboardController extends Controller
       $excel->sheet('Students', function ($sheet) {
         $sheet->appendRow(array(
           'SrNo',
+          'Submited on',
           'Full Name',
           'Preference 1',
           'Preference 2',
@@ -189,10 +190,11 @@ class DashboardController extends Controller
           'JEE Marksheet',
 
         ));
-        foreach (\App\Admission::all() as $admission) {
+        foreach (\App\Admission::latest()->get() as $admission) {
           $data = json_decode($admission->data);
           $sheet->appendRow(array(
             strtoupper($admission->id),
+            strtoupper($admission->created_at),
             strtoupper($data->surname . " " . $data->firstname . " " . $data->fathername . " " . $data->mothername),
             strtoupper($data->pre1),
             strtoupper($data->pre2),
@@ -217,7 +219,6 @@ class DashboardController extends Controller
             isset($data->hsc_marksheet) ? Storage::url($data->hsc_marksheet) : null,
             isset($data->cet_marksheet) ? Storage::url($data->cet_marksheet) : null,
             isset($data->jee_marksheet) ? Storage::url($data->jee_marksheet) : null,
-            'Hello',
           ));
         }
       });
