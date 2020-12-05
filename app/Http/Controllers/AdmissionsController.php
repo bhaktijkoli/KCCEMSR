@@ -36,6 +36,14 @@ class AdmissionsController extends Controller
     }
     return view('pages.admissions.apply');
   }
+  public function forgotPassword(Request $request)
+  {
+    if (Auth::check()) {
+      return redirect()->route('admissions-application');
+    }
+
+    return view('pages.admissions.forgot-password');
+  }
   public function details()
   {
     return view('pages.admissions.details');

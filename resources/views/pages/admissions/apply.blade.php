@@ -34,6 +34,9 @@
 							<div class="form-group">
 								<button type="submit" class="btn btn-primary btn-block">Login</button>
 							</div>
+							{{-- <div style="margin-top: 5px;margin-bottom: 5px">
+								<a href="{{route('admissions-forgot-password')}}">Forgot password?</a>
+							</div> --}}
 						</form>
 					</div>
 

@@ -62,6 +62,8 @@ Route::middleware([MaintenanceCheck::class])->group(function () {
 
   Route::get('/admissions/2020', 'AdmissionsController@details')->name('admissions-details');
   Route::get('/admissions/apply', 'AdmissionsController@applyOnline')->name('admissions-apply');
+  Route::get('/admissions/forgot-password', 'AdmissionsController@forgotPassword')->name('admissions-forgot-password');
+  Route::post('/admissions/forgot-password', 'Auth\AdmissionsController@forgotPassword');
   Route::get('/admissions/verify', 'Auth\AdmissionsController@verify')->name('verify');
   Route::get('/admissions/student-application', 'AdmissionsController@studentApplication')->name('admissions-application');
   Route::post('/admissions/student-application', 'Auth\AdmissionsController@postApplication');

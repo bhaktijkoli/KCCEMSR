@@ -10,13 +10,13 @@ use App\ResponseBuilder;
 class StudentApplicationRequest extends FormRequest
 {
   /**
-  * Determine if the user is authorized to make this request.
-  *
-  * @return bool
-  */
+   * Determine if the user is authorized to make this request.
+   *
+   * @return bool
+   */
   public function authorize()
   {
-    if(Auth::user()->type == 1) {
+    if (Auth::user()->type == 1) {
       return true;
     }
     return false;
@@ -24,10 +24,10 @@ class StudentApplicationRequest extends FormRequest
 
 
   /**
-  * Get the validation rules that apply to the request.
-  *
-  * @return array
-  */
+   * Get the validation rules that apply to the request.
+   *
+   * @return array
+   */
   public function rules()
   {
     return [
@@ -51,6 +51,8 @@ class StudentApplicationRequest extends FormRequest
       'pcity' => 'required|string',
       'pphone' => 'required|string',
       'ppin' => 'required|string',
+      'ssc_marksheet' => 'required',
+      'hsc_marksheet' => 'required',
     ];
   }
   public function messages()
@@ -70,12 +72,15 @@ class StudentApplicationRequest extends FormRequest
       'ccity.required'  => 'Correspondence city is required.',
       'cphone.required'  => 'Correspondence phone is required.',
       'cparent.required'  => 'Correspondence parent is required.',
+      'cpin.required'  => 'Correspondence pincode is required.',
       'pflat.required'  => 'Permanent flat is required.',
       'proad.required'  => 'Permanent road is required.',
       'parea.required'  => 'Permanent area is required.',
       'pcity.required'  => 'Permanent city is required.',
+      'ppin.required'  => 'Permanent pin code is required.',
       'pphone.required'  => 'Permanent phone is required.',
-      'ppin.required'  => 'Permanent pin is required.',
+      'ssc_marksheet.required'  => 'SSC Marksheet is required.',
+      'hsc_marksheet.required'  => 'HSC Marksheet is required.',
     ];
   }
 }
