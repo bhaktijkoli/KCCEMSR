@@ -33,7 +33,7 @@ $nonav = true;
 				<legend>Photograph</legend>
 				<div data-row-span="4">
 					<div data-field-span="1">
-						<img src="{{Storage::url($data->image)}}" alt="" style="width: 100px;height: 100px">
+						<img src="{{Storage::url($data->image)}}" alt="" style="width: 100px;height: 120px">
 					</div>
 				</div>
 			</fieldset>
