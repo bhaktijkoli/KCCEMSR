@@ -91,10 +91,6 @@ class AdmissionsController extends Controller
       $admission = new Admission();
     }
     $admission->userid = Auth::user()->id;
-    if ($request->image) {
-      $admission->deleteImage();
-      $admission->uploadImage($request->file('image'));
-    }
     if ($request->file('image')) {
       $data['image'] = $request->file('image')->store('admission_applications');
     }
