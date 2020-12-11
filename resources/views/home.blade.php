@@ -120,7 +120,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="text-center" style="margin-bottom:20px;">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/X4rDcnwofoo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/TYT3Gcz1kXg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							<!-- <p style="font-size:18px; line-height:18px; margin-top:12px">KCCEMSR Presents "World's Largest Sales Training Webinar" by "Dr. Vivek Bindra" from Bada Business.</p> -->
 						</div>
 					</div>
