@@ -23,7 +23,7 @@ $menu_item = 'admissions';
             </div>
             <div class="col-sm-12">
                 <h3 class="text-center" style="color: #55acee;margin-top:50px">Last Day for filling the application form </h3>
-                <p class="text-center" style="color: #55acee;font-size:24px;font-weight:800">10 Dec, 2020</p>
+                <p class="text-center" style="color: #55acee;font-size:24px;font-weight:800">20 Dec, 2020</p>
                 <h4 class="text-center" style="margin-top: 30px;font-size: 20px">How to get Started:</h4>
             </div>
             <div class="col-sm-12" style="margin-top:20px">
