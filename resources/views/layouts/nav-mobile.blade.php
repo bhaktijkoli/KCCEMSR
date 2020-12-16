@@ -69,8 +69,8 @@
 							<a href="#">Admissions</a>
 							<ul>
 								<li><a href="{{route('admissions-details')}}">Admissions 2020</a></li>
-								<li><a href="{{route('admissions-apply')}}">Apply Online</a></li>
-								<li><a href="{{route('admissions', 'admission-criteria')}}">Admission Criteria</a></li>
+										<li><a href="{{route('admissions-apply')}}">FE Admission 2020-21 Apply Online</a></li>
+										<li><a href="{{route('admissions-apply')}}">Direct Second Year 2020-21 Apply Online</a></li>								<li><a href="{{route('admissions', 'admission-criteria')}}">Admission Criteria</a></li>
 								{{-- <li><a href="{{route('admissions', 'fees-notices')}}">Fees Notices</a></li> --}}
 								<li><a href="{{route('admissions', 'institute-prospectus')}}">Institute Prospectus</a></li>
 								<li><a href="{{route('admissions', 'dte-admission-information-brochure')}}">DTE Admission Information Brochure</a></li>
