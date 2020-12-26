@@ -448,7 +448,7 @@ $nav_trans = 1
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-body">
-					<p>Congratulations to our winner 2020 scholarship scheme</p>
+					<p class="text-center">Congratulations to our winner 2020 scholarship scheme</p>
 					<div class="text-center">
 						<a class="btn btn-success" href="/public/admissions/scholarship-results2020.pdf">Download Results</a>
 					</div>
