@@ -448,28 +448,9 @@ $nav_trans = 1
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-body">
-					<img src="/images/splash_banner.jpeg"/>
-					<div id="openingCarousel" class="carousel slide" data-ride="carousel">
-						<ol class="carousel-indicators">
-							<li data-target="#openingCarousel" data-slide-to="0" class="active"></li>
-							<li data-target="#openingCarousel" data-slide-to="1"></li>
-						</ol>
-						<div class="carousel-inner">
-							<div class="item active">
-								<img src="/images/splash_banner1.jpeg" alt="Banner 1">
-							</div>
-							<div class="item">
-								<img src="/images/splash_banner2.jpeg" alt="Banner 2">
-							</div>
-						</div>
-						<a class="left carousel-control" href="#openingCarousel" data-slide="prev">
-							<span class="glyphicon glyphicon-chevron-left"></span>
-							<span class="sr-only">Previous</span>
-						</a>
-						<a class="right carousel-control" href="#openingCarousel" data-slide="next">
-							<span class="glyphicon glyphicon-chevron-right"></span>
-							<span class="sr-only">Next</span>
-						</a>
+					<p>Congratulations to our winner 2020 scholarship scheme</p>
+					<div class="text-center">
+						<a class="btn btn-success" href="/public/admissions/scholarship-results2020.pdf">Download Results</a>
 					</div>
 					<div class="text-center" style="margin-top:10px">
 						<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
