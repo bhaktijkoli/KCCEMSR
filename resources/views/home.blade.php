@@ -242,6 +242,12 @@ $nav_trans = 1
 						<img src="{{url("images/simple-logic.png")}}">
 						<img src="{{url("images/tcs.png")}}">
 					</div>
+					<div class="column-for-comp">
+						<img src="{{url("images/eclinicalworks.png")}}">
+						<img src="{{url("images/infosys.jpg")}}">
+						<img src="{{url("images/Freestone_infotech.png")}}">
+					</div>
+
 				</div>
 			</div>
 		</div>
