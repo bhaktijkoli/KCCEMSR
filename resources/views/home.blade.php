@@ -250,7 +250,7 @@ $nav_trans = 1
 						<img src="{{url("images/tcs.png")}}">
 					</div>
 					<div class="col-sm-3 text-center">
-						<img src="{{url("images/Freestone_infotech.png")}}">
+						<img src="{{url("images/freestone.png")}}">
 					</div>
 				</div>
 			</div>
