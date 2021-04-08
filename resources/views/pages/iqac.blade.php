@@ -17,7 +17,8 @@ $menu_item = 'iqac';
 				<li class="{{$action=='functions_strategy'?'active':''}}"><a href="{{route('iqac', 'functions_strategy')}}">Functions and Strategy</a></li>
 				<li class="{{$action=='events'?'active':''}}"><a href="{{route('iqac', 'events')}}">Events</a></li>
 				<li class="{{$action=='meetings'?'active':''}}"><a href="{{route('iqac', 'meetings')}}">Meetings</a></li>
-				<li class="{{$action=='audit-statements'?'active':''}}"><a href="{{route('iqac', 'audit-statements')}}">Audit Statements</a></li>
+				<li class="{{$action=='audit-statements'?'active':''}}"><a href="{{route('iqac', 'audit-statements')}}">Audit Statements</a></li>		
+				<li class="{{$action=='audit-statements'?'active':''}}"><a href="{{route('iqac', 'iso')}}">ISO</a></li>
 				<li class="{{$action=='contact_us'?'active':''}}"><a href="{{route('iqac', 'contact_us')}}">Contact Us</a></li>
 			</ul>
 		</div>
@@ -198,7 +199,22 @@ $menu_item = 'iqac';
 						@endphp
 						<ul>
 							@foreach ($ktquestions as $report)
-								<li><a href="{{url('/public/iqac/audit-statements/'.$report->getFilename())}}" target="_blank">{{str_replace('.pdf', '', $report->getFilename())}}</a></li>
+								<li><a href="{{url('/public/iqac/audit-statements/'.$report->getFilename())}}" target="_blank">
+									{{str_replace('.pdf', '', $report->getFilename())}}
+								</a></li>
+							@endforeach
+						</ul>
+				</div>
+				<div id="iso" class="{{$action=='iso'?'tab-pane fade in active':'tab-pane fade in'}}">
+					<h3>ISO</h3>
+			         	@php
+							$ktquestions = File::allFiles(public_path('public/iqac/iso'));
+						@endphp
+						<ul>
+							@foreach ($ktquestions as $report)
+								<li><a href="{{url('/public/iqac/iso/'.$report->getFilename())}}" target="_blank">
+									{{str_replace('.pdf', '', $report->getFilename())}}
+								</a></li>
 							@endforeach
 						</ul>
 				</div>
