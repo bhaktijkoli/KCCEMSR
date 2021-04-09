@@ -123,7 +123,7 @@ $menu_item = 'academics';
 				@endphp
 				<ul>
 					@foreach ($methods as $method)
-					<li><a href="{{url('public/departments/innovate_methods/' . $dep->url .$method->getFilename())}}" target="_blank">
+					<li><a href="{{url('public/departments/innovate_methods/' . $dep->url .'/'.$method->getFilename())}}" target="_blank">
 						{{str_replace('.pdf', '', $method->getFilename())}}
 					</a></li>
 					@endforeach
