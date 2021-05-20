@@ -252,6 +252,9 @@ $nav_trans = 1
 					<div class="col-sm-3 text-center">
 						<img src="{{url("images/freestone.png")}}">
 					</div>
+					<div class="col-sm-3 text-center">
+						<img src="{{url("images/saffo.png")}}">
+					</div>
 				</div>
 			</div>
 		</div>
