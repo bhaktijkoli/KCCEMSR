@@ -244,8 +244,10 @@
 									<li><a href="{{route('naac-feedback')}}">Feedback</a></li>
 									<li><a href="{{route('naac-AQAR-2018-19')}}">AQAR-2018-19</a></li>
 									<li><a href="{{route('naac-AQAR-2019-20')}}">AQAR-2019-20</a></li>
-									<li><a href="{{route('naac-course-outcome')}}">Course Outcome</a></li>
-									<li><a href="{{route('naac-sss')}}">SSS</a></li>
+									<li><a href="{{url('/public/naac/course-outcome-2018-19.pdf')}}">Course Outcome 2018-19</a></li>
+									<li><a href="{{url('/public/naac/course-outcome-2019-20.pdf')}}">Course Outcome 2019-20</a></li>
+									<li><a href="{{url('/public/naac/sss-2018-19.pdf')}}">SSS 2018-19</a></li>
+									<li><a href="{{url('/public/naac/sss-2019-20.pdf')}}">SSS 2019-20</a></li>
 									<li><a href="{{route('naac-institutional-distinctiveness')}}">Institutional Distinctiveness</a></li>
 									<li><a href="{{route('naac-best-practices')}}">Best Practices</a></li>
 									<li><a href="{{route('naac-academic-calendar-2018-19')}}">Academic Calender 2018-19</a></li>
