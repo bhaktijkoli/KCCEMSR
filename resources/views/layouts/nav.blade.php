@@ -80,7 +80,7 @@
 								<li><a href="{{route('hvecell')}}">Human Value Education Cell</a></li>
 								<li><a href="{{route('crowning-glory')}}">Crowning Glory</a></li>
 								{{-- <li><a href="{{route('industrial-institute-interaction')}}">Industry Institute Interaction</a></li> --}}
-								<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSe2Eq5iH-9qlocFqz6rrnpa7Qc2gu6n6xJQaLe3eaLBqfbLiQ/viewform" style="text-shadow: 1px 1px 1.4px #48a9ed;">Admission Enquiry</a></li>
+								<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdQTNEQQmM60wS6cTUmo1nuWBjgoPrACown4n62GwXaSNhq7A/viewform" style="text-shadow: 1px 1px 1.4px #48a9ed;">Admission Enquiry</a></li>
 								<li><a href="{{route('scholarship-scheme')}}" style="text-shadow: 1px 1px 1.4px #48a9ed;">Scholarship Exam</a></li>
 							</ul>
 						</div>
